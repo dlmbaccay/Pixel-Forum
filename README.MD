@@ -1,15 +1,19 @@
-Aquino, Karl Andre      12116249
-Baccay, Dominic Luis    12108173
-Miranda. Bien Aaron     12106773
-Rana, Luis Miguel       12179124
+# MCO3 Phase Submission
 
-MCO3 Phase Submission
+### Developers
 
-To Run:
+* Aquino, Karl Andre      12116249
+* Baccay, Dominic Luis    12108173
+* Miranda. Bien Aaron     12106773
+* Rana, Luis Miguel       12179124
 
-Go to https://pixel-forum.onrender.com
 
-All Possible Users:
+
+### To Run
+
+* Go to https://pixel-forum.onrender.com
+
+### All Possible Users:
 
 EMAIL: verstappenning@gmail.com
 PASSWORD: verstappenning123
@@ -34,4 +38,3 @@ USERNAME: @RPGEnthusiast
 EMAIL: gamingmaster@gmail.com
 PASSWORD: gaming123
 USERNAME: @GamingMaster
-
