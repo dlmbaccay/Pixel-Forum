@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/landing-style.css">
+    <title>Pixel - Landing</title>
+</head>
+<body>
+
+    <div class="feed-container">
+        <header>
+            <div class="account-control" onclick="window.location.href='/html/login.html'"">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login/Register</span>
+            </div>
+
+            <div class="action-container">
+                <div class="action-control" id="recentButton" onclick="window.location.reload()">
+                    <i class="fas fa-clock"></i>
+                    <span>Recent</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="post-container">
+            <div class="recent active">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/be26300aac.js" crossorigin="anonymous"></script>
+    <script src="/js/landing.js" type="module"></script>
+    <script src="/js/nav-profile.js" type="module"></script>
+    <script src="/js/authStateListener.js" type="module"></script>
+</body>
+</html>

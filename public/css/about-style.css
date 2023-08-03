@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+	margin: 0;
+	padding: 0;
+
+	background-color: #f3f3f3;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.dev-container .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+    background-color: #05141a;
+    margin: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dev-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #f3f3f3;
+}
+
+.dev-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev-account {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+
+    transition: all 0.3s;
+}
+
+.dev-account:hover {
+    color: #d790b3;
+}
+
+.third-party-container {
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third-party-container .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-right: 10px;
+}
+
+.third-party-container .card {
+    height: 250px;
+    width: 300px;
+    background-color: #05141a;
+    margin: 10px;
+    padding: 20px;
+
+    color: #f3f3f3;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.third-party-container .card .title {
+    transition: all 0.3s;
+}
+
+.third-party-container .card .title:hover {
+    color: #d790b3;
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+/* 
+D790B3 - Amaranth Pink
+233144 - Prussian Blue
+142632 - Gunmetal
+05141A - Rich Black FOGRA 29
+C95A91 - Light Carmine Pink
+FAFAFA - Anti-Flash White
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #D790B3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: #05141A;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+form header {
+    color: #D790B3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D790B3;
+    color: #05141A;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.form-control input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    color: #05141A;
+    height: 50px;
+    width: 300px;
+    border: none;
+    padding: 5px 0;
+    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+.form-control input:focus {
+    outline: none;
+    height: 55px;
+    font-size: 1.1rem;
+    background-color: #FAFAFA;
+    color: #05141A;
+}
+
+.form-control.email input {
+    border-radius: 0 50px 50px 0;
+    margin-left: -20px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.form-control.password input {
+    box-sizing: border-box;
+    border-radius: 50px 0 0 50px;
+    margin-right: -23px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.checkbox-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.checkbox-control input {
+    background-color: #D790B3;
+    margin-right: 10px;
+}
+
+.checkbox-control label {
+    color: #D790B3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #D790B3;
+    color: #FAFAFA;
+    width: 67%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    background-color: #FAFAFA;
+    color: #05141A;
+}
+
+form footer {
+    color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+form footer a {
+    color: #D790B3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form footer a:hover {
+    color: #FAFAFA;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/home-style.css">
+    <title>Pixel - Home</title>
+</head>
+<body>
+    
+    <!-- left side navbar -->
+    <div class="navbar">
+        <div class="brand">
+            <a href="/html/home.html">
+                <img src="/img/chicken-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a href="/html/home.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a id="my-profile">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="logout">
+            <a id="logoutButton">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="feed-container">
+
+        <header>
+            <div class="user-info" id="profile-header">
+                <img class="profilePicture">
+                <span class="username" ></span>
+            </div>
+
+            <div class="action-container">
+                <div class="action-control" id="postButton">
+                    <i class="fas fa-plus"></i>
+                    <span>Post</span>
+                </div>
+                <div class="action-control active" id="trendingButton">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </div>
+
+                <div class="action-control" id="recentButton">
+                    <i class="fas fa-clock"></i>
+                    <span>Recent</span>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search">
+                <button id="searchPostBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <div class="post-container">
+            <div class="create-post">
+                <form id="createPostForm">
+                    <p>
+                        Create Post
+                        <span id="error" class="hide"> Please fill out all fields </span>
+                    </p>
+
+                    <div class="form-control">
+                        <label for="postTitle">Title</label>
+                        <input type="text" name="postTitle" id="postTitle">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="postTag">Tag</label>
+                        <input type="text" name="postTag" id="postTag">
+                    </div>
+
+                    <div class="form-control body">
+                        <label for="postContent">Body</label>
+                        <textarea name="postContent" id="postContent"></textarea>
+                    </div>
+
+                    <div class="button-control">
+                        <button type="button" id="clearForm">Clear</button>
+                        <button type="submit" id="submitPostButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="trending active">
+                
+            </div>
+
+            <div class="recent">
+            </div>
+
+            <div class="search-results">
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-control" onclick="window.location.href='/html/about.html'">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/be26300aac.js" crossorigin="anonymous"></script>
+    <script src="/js/create-post.js" type="module"></script>
+    <script src="/js/home.js" type="module"></script>
+    <script src="/js/authStateListener.js" type="module"></script>
+    <script src="/js/nav-profile.js" type="module"></script>
+</body>
+</html>

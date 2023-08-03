@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/post-style.css">
+    <title>Pixel - Post</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="brand">
+            <!-- <a href="new-home.html">Pixel</a> -->
+            <a href="/html/home.html">
+                <img src="/img/chicken-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a href="/html/home.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a id="my-profile">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="logout">
+            <a id="logoutButton">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="edit-container hidden">
+            <div class="edit-post">
+                <form id="editPostForm">
+                    <p>Edit Post</p>
+
+                    <div class="form-control">
+                        <label for="newPostTitle">Title</label>
+                        <input type="text" name="newPostTitle" id="newPostTitle">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="newPostTag">Tag</label>
+                        <input type="text" name="newPostTag" id="newPostTag">
+                    </div>
+
+                    <div class="form-control body">
+                        <label for="newPostContent">Body</label>
+                        <textarea name="newPostContent" id="newPostContent"></textarea>
+                    </div>
+
+                    <div class="edit-button-control">
+                        <button type="button" id="cancelForm">Cancel</button>
+                        <button type="button" id="clearForm">Clear</button>
+                        <button type="submit" id="saveEditButton">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="post">
+            <!-- HTML structure for post.html -->
+
+            <header>
+                <div class="post-meta">
+                    <a href="home.html" id="backButton">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <p id="postTag"></p>
+                    <p id="postDate"></p>
+                </div>
+
+                <span id="postTitle"></span>
+                <span class="edited hidden">Edited</span>
+                
+            </header>
+            
+            <article id="postContent">
+
+            </article>
+
+            <footer>
+                <div class="author-meta">
+                    <div class="author-profile">
+                        <img src="" alt="" id="authorProfilePicture">
+                        <span id="authorName"></span>
+                    </div>
+
+                    <div class="author-control">
+                        <button id="editButton"><i class="fas fa-edit"></i></button>
+                        <button id="deleteButton"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="vote-control">
+                    <div class="button-control">
+                        <button id="upvoteButton"><i class="fas fa-arrow-up"></i></button>
+                        <span id="postUpvotes"></span>
+                    </div>
+                    <div class="button-control">
+                        <button id="downvoteButton"><i class="fas fa-arrow-down"></i></button>
+                        <span id="postDownvotes"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- <hr> -->
+        <div class="create-comment-container">
+            <header>
+                <p>Comments <span id="postCommentCount"></span></p>
+            </header>
+
+            <form id="commentForm">
+                <textarea id="commentContent" placeholder="Write a comment..."></textarea>
+                <input type="button" id="commentButton" value="Comment">
+            </form>
+        </div>
+        
+        <div class="comment-container">
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/be26300aac.js" crossorigin="anonymous"></script>
+    <script src="/js/view-post.js" type="module"></script>
+    <script src="/js/authStateListener.js" type="module"></script>
+    <script src="/js/nav-profile.js" type="module"></script>
+</body>
+</html>

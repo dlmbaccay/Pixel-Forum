@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/profile-style.css">
+    <title>Pixel - Profile</title>
+</head>
+<body>
+    
+    <!-- left side navbar -->
+    <div class="navbar">
+        <div class="brand">
+            <a href="/html/home.html">
+                <img src="/img/chicken-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a href="/html/home.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a id="my-profile">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="logout">
+            <a id="logoutButton">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <aside class="profile-aside">
+            <div class="profile-pic-container">
+                <img class="profilePicture">
+            </div>
+            <div class="profile-info-container">
+                <label class="username-label">Username</label>
+                <hr>
+                <!-- replace username with current username to view edit -->
+                <span id="display-username"></span> 
+                <hr>
+                <span id="user-description"></span>
+            </div>
+            <div class="profile-edit-control">
+                
+                <button id="edit-profile-button" class="hidden">Edit Profile</button>
+                <div class="edit-profile-card hidden">
+                    <form>
+                        <div class="form-control">
+                            <label for="profile-picture">Edit Profile Picture</label>
+                            <select id="profile-picture" name="profile-picture">
+                                <option value="default" data-image="/img/default-user-icon.jpg">Default</option>
+                                <option value="male1" data-image="/img/man1.png">Male 1</option>
+                                <option value="female1" data-image="/img/woman1.png">Female 1</option>
+                                <option value="male2" data-image="/img/man2.png">Male 2</option>
+                                <option value="female2" data-image="/img/woman2.png">Female 2</option>
+                                <option value="icon-one" data-image="/img/icon-one.png">Icon 1</option>
+                                <option value="icon-two" data-image="/img/icon-two.png">Icon 2</option>
+                                <option value="icon-three" data-image="/img/icon-three.png">Icon 3</option>
+                                <option value="icon-four" data-image="/img/icon-four.png">Icon 4</option>
+                                <option value="icon-five" data-image="/img/icon-five.png">Icon 5</option>
+                                <option value="icon-six" data-image="/img/icon-six.png">Icon 6</option>
+                                <option value="icon-seven" data-image="/img/icon-seven.png">Icon 7</option>
+                                <option value="icon-eight" data-image="/img/icon-eight.png">Icon 8</option>
+                                <option value="icon-nine" data-image="/img/icon-nine.png">Icon 9</option>
+                                <option value="icon-ten" data-image="/img/icon-ten.png">Icon 10</option>
+                                <option value="icon-eleven" data-image="/img/icon-eleven.png">Icon 11</option>
+                                <option value="icon-twelve" data-image="/img/icon-twelve.png">Icon 12</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="description">Edit Description</label>
+                            <textarea name="description" id="description" placeholder="Description"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <button class="underline-hover" id="cancel-button">Cancel</button>
+                            <button id="save-button">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <div class="main-container">
+            <div class="activity-header">
+                <div class="action-control active" id="postButton">
+                    <i class="fa-solid fa-signs-post"></i>
+                    <span>Posts</span>
+                </div>
+
+                <div class="action-control" id="commentButton">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Comments</span>
+                </div>
+            </div>
+            
+            <div class="activity-container">
+                <div class="user-posts active" id="posts">
+                </div>
+                <div class="user-comments" id="comments">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/be26300aac.js" crossorigin="anonymous"></script>
+    <script src="/js/profile.js" type="module"></script>
+    <script src="/js/nav-profile.js" type="module"></script>
+    <script src="/js/authStateListener.js" type="module"></script>
+</body>
+</html>

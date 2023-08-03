@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/about-style.css">
+    <title>Pixel - About</title>
+</head>
+<body>
+    
+    <!-- left side navbar -->
+    <div class="navbar">
+        <div class="brand">
+            <a href="/html/home.html">
+                <img src="/img/chicken-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a href="/html/home.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a id="my-profile">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="logout">
+            <a id="logoutButton">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <!-- 
+            All NPM packages used for the project as well as third party libraries must be
+            stated and indicated in the "About" page of the web application. 
+        -->
+
+        <div class="dev-container">
+            <div class="dev">
+                <div class="dev-pic"> 
+                    <img src="/img/dev-andre.jpeg" alt="">
+                </div>
+                <div class="dev-name"> Andre Aquino </div>
+                <a class="dev-account" href="https://github.com/Andre0819"> <i class="fab fa-github"></i> </a>
+            </div>
+
+            <div class="dev">
+                <div class="dev-pic"> 
+                    <img src="/img/dev-dom.jpeg" alt="">
+                </div>
+                <div class="dev-name"> Dominic Baccay </div>
+                <a class="dev-account" href="https://github.com/dlmbaccay"> <i class="fab fa-github"></i> </a>
+            </div>
+
+            <div class="dev">
+                <div class="dev-pic"> 
+                    <img src="/img/dev-bien.jpeg" alt="">
+                </div>
+                <div class="dev-name"> Bien Miranda </div>
+                <a class="dev-account" href="https://github.com/Alexxanderson"> <i class="fab fa-github"></i> </a>
+            </div>
+
+            <div class="dev">
+                <div class="dev-pic"> 
+                    <img src="/img/dev-lui.png" alt="">
+                </div>
+                <div class="dev-name"> Luis Rana </div>
+                <a class="dev-account" href="https://github.com/luii-hub"> <i class="fab fa-github"></i> </a>
+            </div>
+
+            <h2 class="title"> Website Developers </h2>
+        </div>
+        
+        <div class="third-party-container">
+            <h2 class="title"> Third Party Applications Used </h2>
+
+            <div class="card">
+                <h2 class="title" onclick="window.location.href='https://expressjs.com/'">
+                    <i class="fas fa-link"></i> 
+                    Express
+                </h2>
+
+                <article>
+                    Used in server side to handle requests and responses.
+                </article>
+            </div>
+            
+            <div class="card">
+                <h2 class="title" onclick="window.location.href='https://fontawesome.com/'">
+                    <i class="fas fa-link"></i> 
+                    Font Awesome
+                </h2>
+
+                <article>
+                    Used in the web application for icons.
+                </article>
+            </div>
+
+            <div class="card">
+                <h2 class="title" onclick="window.location.href='https://firebase.google.com/'">
+                    <i class="fas fa-link"></i> 
+                    Firebase
+                </h2>
+
+                <article>
+                    Used in the web application for authentication and database.
+                </article>
+            </div>
+
+            <div class="card">
+                <h2 class="title" onclick="window.location.href='https://render.com/'">
+                    <i class="fas fa-link"></i> 
+                    Render
+                </h2>
+
+                <article>
+                    Used in hosting the web application.
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/be26300aac.js" crossorigin="anonymous"></script>
+    <script src="/js/nav-profile.js" type="module"></script>
+    <script src="/js/authStateListener.js" type="module"></script>
+</body>
+</html>
