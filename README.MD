@@ -13,7 +13,7 @@
 
 * Go to https://pixel-forum.onrender.com
 
-### All Possible Users:
+### Possible Users:
 
 EMAIL: verstappenning@gmail.com
 PASSWORD: verstappenning123
